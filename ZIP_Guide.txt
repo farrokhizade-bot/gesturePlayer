@@ -1,0 +1,59 @@
+پروژه کامل "پلیر حرکتی" - راهنمای ساخت و آپلود
+
+============================================
+این فایل شامل همه چیز برای ساخت APK است.
+همه فایل‌های نوشته‌شده در این چت را باید
+onحowالا در یک پوشه جمع کنید.
+============================================
+
+ساختار نهایی پوشه پروژه:
+
+GesturePlayer/
+├── build.gradle (پروژه)
+├── settings.gradle
+├── gradle.properties
+├── gradlew
+├── app/
+│   ├── build.gradle
+│   ├── proguard-rules.pro
+│   └── src/
+│       └── main/
+│           ├── AndroidManifest.xml
+│           ├── assets/
+│           │   └── hand_landmarker.task (از لینک دانلود کن)
+│           ├── java/com/example/gestureplayer/
+│           │   ├── MainActivity.kt
+│           │   ├── MusicPlayer.kt
+│           │   ├── GestureController.kt
+│           │   └── LibraryActivity.kt
+│           └── res/
+│               ├── layout/
+│               │   ├── activity_main.xml
+│               │   ├── activity_library.xml
+│               │   └── item_song.xml
+│               ├── values/
+│               │   ├── colors.xml
+│               │   ├── strings.xml
+│               │   └── themes.xml
+│               └── drawable/
+│                   ├── ic_play.xml
+│                   ├── ic_pause.xml
+│                   ├── ic_next.xml
+│                   ├── ic_previous.xml
+│                   ├── ic_music.xml
+│                   ├── ic_camera.xml
+│                   ├── ic_camera_active.xml
+│                   ├── ic_library.xml
+│                   ├── ic_palette.xml
+│                   ├── rounded_button.xml
+│                   ├── rounded_play_button.xml
+│                   └── rounded_background.xml
+
+نحوه ایجاد ZIP با گوشی:
+1. با ZArchiver یا Solid Explorer
+2. یک پوشه به نام GesturePlayer بساز
+3. همه فایل‌ها را داخل پوشه بگذار (طبق ساختار بالا)
+4. پوشه را انتخاب کن → Extract/Create Archive → ZIP
+5. فایل ZIP آماده است
+
+سپس آن را در GitHub آپلود کن.

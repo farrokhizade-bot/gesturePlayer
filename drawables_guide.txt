@@ -1,0 +1,102 @@
+ساخت آیکون‌ها - ضروری!
+
+در پوشه res/drawable باید این فایل‌های XML رو بسازی.
+برای هر کدوم این کد را کپی کن:
+
+--- ic_play.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M8,5v14l11,-7z"/>
+</vector>
+
+--- ic_pause.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M6,19h4L10,5L6,5v14zM14,5v14h4L18,5h-4z"/>
+</vector>
+
+--- ic_next.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M6,18l8.5,-6L6,6v12zM16,6v12h2L18,6h-2z"/>
+</vector>
+
+--- ic_previous.xml (آینه ic_next) ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M6,6h2v12L6,18zM9.5,12l8.5,6L18,6z"/>
+</vector>
+
+--- ic_music.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M12,3v10.55c-0.59,-0.34 -1.27,-0.55 -2,-0.55 -2.21,0 -4,1.79 -4,4s1.79,4 4,4 4,-1.79 4,-4V7h4V3h-6z"/>
+</vector>
+
+--- ic_camera.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M12,12m-3.2,0a3.2,3.2 0,1 1,6.4 0a3.2,3.2 0,1 1,-6.4 0"/>
+    <path android:fillColor="#000000"
+        android:pathData="M9,2L7.17,4H4c-1.1,0 -2,0.9 -2,2v12c0,1.1 0.9,2 2,2h16c1.1,0 2,-0.9 2,-2V6c0,-1.1 -0.9,-2 -2,-2h-3.17L15,2H9zm3,15c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5z"/>
+</vector>
+
+--- ic_camera_active.xml (همون با رنگ سبز) ---
+همان بالا ولی با android:tint="#1DB954"
+
+--- ic_library.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M4,6H2v14c0,1.1 0.9,2 2,2h14v-2H4V6zm16,-4H8C6.9,2 6,2.9 6,4v12c0,1.1 0.9,2 2,2h12c1.1,0 2,-0.9 2,-2V4c0,-1.1 -0.9,-2 -2,-2zm-1,9h-4v4h-2v-4H9V9h4V5h2v4h4v2z"/>
+</vector>
+
+--- ic_palette.xml ---
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24"
+    android:tint="#FFFFFF">
+    <path android:fillColor="#000000"
+        android:pathData="M12,3c-4.97,0 -9,4.03 -9,9s4.03,9 9,9c0.83,0 1.5,-0.67 1.5,-1.5 0,-0.39 -0.15,-0.74 -0.39,-1.01 -0.23,-0.26 -0.38,-0.61 -0.38,-0.99 0,-0.83 0.67,-1.5 1.5,-1.5L16,16c2.76,0 5,-2.24 5,-5 0,-4.42 -4.03,-8 -9,-8zM6.5,12c-0.83,0 -1.5,-0.67 -1.5,-1.5S5.67,9 6.5,9 8,9.67 8,10.5 7.33,12 6.5,12zM9.5,8C8.67,8 8,7.33 8,6.5S8.67,5 9.5,5s1.5,0.67 1.5,1.5S10.33,8 9.5,8zM14.5,8c-0.83,0 -1.5,-0.67 -1.5,-1.5S13.67,5 14.5,5s1.5,0.67 1.5,1.5S15.33,8 14.5,8zM17.5,12c-0.83,0 -1.5,-0.67 -1.5,-1.5S16.67,9 17.5,9s1.5,0.67 1.5,1.5 -0.67,1.5 -1.5,1.5z"/>
+</vector>
+
+--- rounded_button.xml ---
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#2A2A2A"/>
+    <corners android:radius="30dp"/>
+</shape>
+
+--- rounded_play_button.xml ---
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#1DB954"/>
+    <corners android:radius="36dp"/>
+</shape>
+
+--- rounded_background.xml ---
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#2A2A2A"/>
+    <corners android:radius="16dp"/>
+</shape>
